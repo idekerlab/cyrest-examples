@@ -49,6 +49,7 @@ Docker is a tool designed to make it easier to create, deploy, and run applicati
 
 ## Mac
 If you are Mac user, please try the following steps.
+
 1. First, please access this url. https://www.docker.com/products/docker#/mac
 1. Then, please download and install docker for mac in this page.
 
@@ -56,6 +57,7 @@ More information : https://docs.docker.com/docker-for-mac/
 
 ## Windows
 If you are Windows user, please try the following steps.
+
 1. First, please access this url. https://www.docker.com/products/docker#/windows
 1. Then, please download and install docker for windows in this page.
 
