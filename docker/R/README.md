@@ -15,7 +15,7 @@ To use this docker and get environment to visualize networks by Cytoscape, pleas
 This gives you the following things.
 
 - The environment for data visualization with Cytoscape/jupyter-notebook/Rcy3.
-- The packages that we use often in Data visualization : Jupyter Notebook/Igraph/RCy3
+- The packages that we use often in Data visualization with R: Jupyter Notebook/Igraph/RCy3
 - You can execute or try any examples of workflow in this repository.
 
 ## More about RCy3
