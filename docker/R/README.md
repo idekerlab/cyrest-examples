@@ -1,10 +1,12 @@
 # Introduction
 
+This is docker file that can .
+
 # Prerequisites
 
-- Java SE 8. Cytoscape 3.3 and CyREST currently do not support Java SE 6 or 7 anymore. Java SE 7 works only in combination with Cytoscape 3.2. Java can be can downloaded from Oracle here: http://www.oracle.com/technetwork/java/ javase/downloads/index.html.
+- Java SE 8. Cytoscape 3.3 and CyREST currently do not support Java SE 6 or 7 anymore. Java SE 7 works only in combination with Cytoscape 3.2. Java can be can downloaded from Oracle here: http://www.oracle.com/technetwork/java/javase/downloads/index.html.
 - Cytoscape version 3.3+, which can be downloaded from http://www.cytoscape. org/download.php.
-- CyREST, version 3.0.0 or later, a Cytoscape plugin which provides the Cytoscape end of the communication layer, can be installed via the App Manager or down- loaded from the Cytoscape plugins website: http://apps.cytoscape.org/apps/ cyrest.
+- CyREST, version 3.0.0 or later, a Cytoscape plugin which provides the Cytoscape end of the communication layer, can be installed via the App Manager or down- loaded from the Cytoscape plugins website: http://apps.cytoscape.org/apps/cyrest.
 
 # What this Gives you?
 
