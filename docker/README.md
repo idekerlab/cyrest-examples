@@ -2,6 +2,4 @@
 
 ## What's this?
 
-This directory is for sharing typical Dockerfiles for network data visualization.
-
-
+This directory is sharing typical Dockerfiles to visualize network data for python or R users.
