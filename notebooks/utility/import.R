@@ -8,7 +8,7 @@
 #    geneB <relationship type> geneC
 #    geneB <relationship type> geneD
 #    geneB <relationship type> geneE
-sifDataToDataFrame <- function(filename){
+sifDataToMatrix <- function(filename){
   f<-file(filename,"r")
   result.vec = c()
   repeat{
@@ -33,3 +33,5 @@ sifDataToDataFrame <- function(filename){
   }
   return(matrix(result.vec, ncol=3, byrow = TRUE))
 }
+
+
