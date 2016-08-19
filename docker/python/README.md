@@ -25,9 +25,9 @@ Please do the following steps to get started.
 1. Install 'Docker for Mac/Windows' in your personal computer(You can skip this step if you already use docker in your computer)
 1. Download or clone this directory.
 1. Build and run Dockerfile in your computer.
-  1. Open a command-line terminal, and go to the directory where you downloaded this repository.
-  1. Try ``` docker build -t cyrest/examples . ``` on command-line.
-  1. When the building docker image finished, please type ``` ocker run -d -p 8888:8888 cyrest/examples```.
+    1. Open a command-line terminal, and go to the directory where you downloaded this repository.
+    1. Try ``` docker build -t cyrest/examples . ``` on command-line.
+    1. When the building docker image finished, please type ``` docker run -d -p 8888:8888 -v /Your/work/space/path:/home/jovyan/work cyrest/examples```. If you set our workflow directory as your work space path, you can try our workflow.
 1. Now, you can use jupyter-notebook and try the workflow or something!!
 
 If you don't know much about docker or this is the first time to use docker, it is helpful to read following message.
