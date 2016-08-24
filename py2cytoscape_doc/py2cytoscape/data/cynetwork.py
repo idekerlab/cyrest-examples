@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """
+CyNetwork class is a simple wrapper for network-related cyREST raw REST API.
+It does not hold the actual network data. It's a reference to a network in current Cytoscape session.
 
+With CyNetwork API, you can access Cytoscape data objects in more Pythonista-friendly way.
 """
 import json
 
@@ -18,7 +21,7 @@ BASE_URL_NETWORK = BASE_URL + 'networks'
 
 class CyNetwork(object):
     """
-
+    
     """
     def __init__(self, suid=None, session=None, url=None):
         if pd.isnull(url):

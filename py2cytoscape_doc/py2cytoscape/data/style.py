@@ -10,6 +10,7 @@ import pandas as pd
 
 class Style(object):
     """
+
     """
     def __init__(self, name):
         # Validate required argument
@@ -45,6 +46,7 @@ class Style(object):
     def create_discrete_mapping(self, column=None, col_type='String',
                                 vp=None, mappings=None):
         """
+
         :param column:
         :param col_type:
         :param vp:
@@ -57,6 +59,7 @@ class Style(object):
     def create_continuous_mapping(self, column=None, col_type='String',
                                   vp=None, points=None):
         """
+
         :param column:
         :param col_type:
         :param vp:
@@ -69,6 +72,7 @@ class Style(object):
     def create_passthrough_mapping(self, column=None, col_type='String',
                                    vp=None):
         """
+
         :param column:
         :param col_type:
         :param vp:

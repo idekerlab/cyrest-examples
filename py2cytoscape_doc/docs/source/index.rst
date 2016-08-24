@@ -6,10 +6,12 @@
 Welcome to py2cytoscape document's documentation!
 =================================================
 
-Contents:
+py2cytoscape is a collection of utilities to use Cytoscape and Cytoscape.js from Python.
+Network visualization feature is still limited in Python, but with this tool, you can access both of Cytoscape and Cytoscape.js as network visualization engines for your Python code!
 
 .. toctree::
    :maxdepth: 2
+   :github_url: ~~
 
 
 
@@ -19,4 +21,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

@@ -11,6 +11,7 @@ from .style import Style
 
 class StyleClient(object):
     """
+    This class has the method to manage cytoscape style. By using this, you can create, delete, apply and get style class.
     """
     def __init__(self, url):
         self.__url = url + 'styles'
@@ -20,8 +21,13 @@ class StyleClient(object):
 
     def create(self, name=None, original_style=None):
         """
-        :param name:
-        :param original_style:
+        This method create style object of the existing network.
+        You can create new style object or get existing style object.
+
+        :param name: style object's name.
+        :param original_style: Now, you can't use this parameter.
+
+        :return : Style object.
         """
         if name is None:
             raise ValueError('Name is required.')
@@ -50,8 +56,10 @@ class StyleClient(object):
 
     def get(self, name, data_format='cy3'):
         """
-        :param name:
-        :param data_format:
+        Get Visual Style in Cytoscape.js CSS format. This is always in an array.
+
+        :param name: The visual style's name.
+        :param data_format: the data format.
         """
         if name is None:
             raise ValueError('Style name is required.')
@@ -65,8 +73,11 @@ class StyleClient(object):
 
     def apply(self, style, network=None):
         """
-        :param style:
-        :param network:
+        Apply visual style to a network. You input style object and network object as parameter,
+        then you can apply network in a style object's way.
+
+        :param style: style object.
+        :param network: Cytoscape Network object.
         """
         if network is None:
             raise ValueError('Target network is required')
@@ -76,18 +87,23 @@ class StyleClient(object):
 
     def delete(self, style):
         """
-        :param style:
+        Delete the style.
+
+        :param style: The style object that you want to delete.
         """
         requests.delete(self.__url + '/' + style.get_name())
 
     def delete_all(self):
         """
+        Delete all existing style.
         """
         requests.delete(self.__url)
 
 
 class VisualProperties(object):
     """
+    This class has the methods to get visual properties.
+    
     """
     def __init__(self, url):
         self.__url = url + 'styles/visualproperties'
@@ -120,24 +136,32 @@ class VisualProperties(object):
 
     def get_all(self):
         """
-        :return :
+        Get all value of the visual propaties.
+
+        :return : visual propaties
         """
         return self.__vps
 
     def get_node_visual_props(self):
         """
-        :return :
+        Get the value of the node visual propaties.
+
+        :return : the node visual propaties.
         """
         return self.__node_vp
 
     def get_edge_visual_props(self):
         """
-        :return :
+        Get the value of the node visual propaties.
+
+        :return : the edge visual propaties.
         """
         return self.__edge_vp
 
     def get_network_visual_props(self):
         """
-        :return :
+        Get the value of the node visual propaties.
+
+        :return : the network visual propaties.
         """
         return self.__network_vp

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+This class
 
 """
 import json
@@ -18,6 +19,7 @@ BASE_URL_NETWORK = BASE_URL + 'networks'
 
 class CyNetworkView(object):
     """
+
     """
     def __init__(self, network=None, suid=None):
         if network is None:
@@ -51,19 +53,25 @@ class CyNetworkView(object):
 
     def get_node_views(self):
         """
-        :return:
+        Get node views status.
+
+        :return: node views status value.
         """
         return self.__get_views('nodes')
 
     def get_edge_views(self):
         """
-        :return:
+        Get edge views status.
+
+        :return: edge views statu value.
         """
         return self.__get_views('edges')
 
     def get_node_views_as_dict(self):
         """
-        :return:
+        Get node views as dictionary.
+
+        :return: 
         """
         return self.__get_views('nodes', format='dict')
 
@@ -196,6 +204,7 @@ class CyNetworkView(object):
 
         :param visual_property:
         :param value:
+
         :return:
         """
 
