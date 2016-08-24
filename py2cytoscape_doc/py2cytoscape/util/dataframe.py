@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
+Data conversion utilities for dataframe
+=====================================
+
+Convert cytoscape.js style graphs from/to dataframe object.
+
 
 """
+
 import pandas as pd
 from . import cytoscapejs as cyjs
 
@@ -11,13 +17,14 @@ def from_dataframe(df, source_col='source', target_col='target', interaction_col
     """
     Utility to convert Pandas DataFrame object into Cytoscape.js JSON
 
-    :param df:
-    :param source_col:
-    :param target_col:
-    :param interaction_col:
-    :param name:
-    :param edge_attr_cols:
-    :return:
+    :param df: the data frame object.
+    :param source_col: the column name of source column.
+    :param target_col: the column name of target column.
+    :param interaction_col: the column name of interaction column.
+    :param name: The network name.
+    :param edge_attr_cols: Now, this parapeter is not valid.
+
+    :return: the Cytoscape.js JSON
     """
     network = cyjs.get_empty_network(name=name)
     nodes = set()
@@ -40,9 +47,13 @@ def from_dataframe(df, source_col='source', target_col='target', interaction_col
 
 def to_dataframe(network, interaction='interaction', default_interaction='-'):
     """
-    :param network:
-    :param interaction:
-    :param default_interaction:
+    This method convert Cytoscape.js JSON to Pandas DataFrame.
+
+    :param network: The Cytoscape.js JSON
+    :param interaction: The column name of interaction
+    :param default_interaction: The defalt value of interaction.
+
+    :return : The Pandas DataFrame object.
     """
     edges = network['elements']['edges']
 
@@ -64,8 +75,11 @@ def to_dataframe(network, interaction='interaction', default_interaction='-'):
 
 def get_node(id):
     """
-    :param id:
-    :return :
+    Get the node information in JSON format.
+
+    :param id: The network node id or name.
+
+    :return : the json object about node.
     """
     node = {
         'data': {
@@ -78,10 +92,13 @@ def get_node(id):
 
 def get_edge(source, target, interaction):
     """
-    :param source:
-    :param target:
-    :param interaction:
-    :return :
+    Get the edge information in JSON format.
+
+    :param source: the id or name of source node.
+    :param target: the id or name of target node.
+    :param interaction: the interaction of edge.
+
+    :return : the JSON value about edge.
     """
     if interaction is None:
         itr = '-'

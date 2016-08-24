@@ -1,17 +1,26 @@
 # -*- coding: utf-8 -*-
 """
+Data conversion utility for numpy
+=====================================
+
+Convert cytoscape.js style graphs from numpy object.
+
+http://www.numpy.org
 
 """
 import numpy as np
 
 def from_ndarray(data, name=None, labels=None, directed=False, weighted=False):
     """
-    :param data:
-    :param name:
-    :param labels:
-    :param directed:
-    :param weighted:
-    :return :
+    This method is converter to change ndarray to cytoscape.js style JSON.
+
+    :param data: ndarray object.
+    :param name: This is the network name.
+    :param labels: This is the list of nodes' names
+    :param directed: If this parapeter is True, the graph will be directed. On the other hand, the graph will be undirected.
+    :param weighted: If this parapeter is True, the graph will have weighted edges. On the other hand, the graph will have unweighted edges.
+
+    :return : The cytoscape.js object.
     """
     mat_dim = data.shape
     if mat_dim[0] != mat_dim[1]:

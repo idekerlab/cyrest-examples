@@ -4,6 +4,7 @@
 """
 def from_sgraph(sgraph):
     """
+
     :param sgraph:
     :return:
     """

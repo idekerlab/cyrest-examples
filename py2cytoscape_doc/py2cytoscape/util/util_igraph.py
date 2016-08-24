@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+Data conversion utilities for igraph
+=====================================
 
-Conversion utilities for igraph
+Convert cytoscape.js style graphs from/to igraph object.
+
+http://igraph.org/python/
 
 """
 
@@ -12,10 +16,13 @@ DEF_SCALING = 100.0
 
 def from_igraph(igraph_network, layout=None, scale=DEF_SCALING):
     """
-    :param igraph_network:
-    :param layout:
-    :param scale:
+    Convert igraph object to cytoscape.js style graphs.
 
+    :param igraph_network: igraph object.
+    :param layout: 
+    :param scale: This is the scale of graph. You can scale the original igraph size to Cytoscape size.
+
+    :return : cytoscape.js style graph object.
     """
     new_graph = {}
     network_data = {}
@@ -71,7 +78,11 @@ def from_igraph(igraph_network, layout=None, scale=DEF_SCALING):
 
 def to_igraph(network):
     """
-    :param network:
+    Convert cytoscape.js style graphs to igraph object.
+
+    :param network: the cytoscape.js style netwrok.
+
+    :return: the igraph object.
     """
     nodes = network['elements']['nodes']
     edges = network['elements']['edges']

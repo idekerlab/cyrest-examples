@@ -87,10 +87,12 @@ def __build_empty_graph():
 
 def from_networkx(g, layout=None, scale=DEF_SCALE):
     """
-    :param g:
+    Convert networkx's object to Cytoscape.js style graphs.
+    :param g: networkx's object
     :param layout:
-    :param scale:
-    :return :
+    :param scale: This is the scale of graph. You can scale the original igraph size to Cytoscape size.
+
+    :return : cytoscape.js style graph object.
     """
     # Dictionary Object to be converted to Cytoscape.js JSON
     cygraph = __build_empty_graph()
@@ -130,11 +132,11 @@ def to_networkx(cyjs, directed=True):
 
     By default, data will be handles as a directed graph.
 
-    :param cyjs:
-    :param directed:
+    :param cyjs: Cytoscape.js style JSON
+    :param directed: If the value is True, the graph will be directed.
+                     If the value is False, the graph will be undirected.
 
-    :return :
-
+    :return : The networkx object.
     """
 
     if directed:

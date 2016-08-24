@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 """
+This is the utility for cytoscape.js obejct.
+=====================================
+
 
 """
 import copy
@@ -17,8 +20,11 @@ EMPTY_NETWORK = {
 
 def get_empty_network(name='Empty Network'):
     """
-    :param name:
-    :return :
+    Get empty network in the cytoscape.js style.
+
+    :param name: the empty network's name.
+
+    :return : the empty network's cytoscape.js style object.
     """
     empty_network = copy.deepcopy(EMPTY_NETWORK)
     empty_network['data']['name'] = name
