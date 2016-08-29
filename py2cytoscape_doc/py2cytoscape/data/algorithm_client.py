@@ -9,7 +9,7 @@ HEADERS = {'Content-Type': 'application/json'}
 
 class LayoutClient(object):
     """
-    
+
     :param object:
     """
     def __init__(self, url):
@@ -45,7 +45,9 @@ class LayoutClient(object):
 
     def fit(self, network=None):
         """
-        :param network:
+        Fit an existing network view to current window.
+
+        :param network: Cytoscape network object
         """
         if network is None:
             raise ValueError('Target network is required')

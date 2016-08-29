@@ -10,6 +10,7 @@ BASE_URL_NETWORK = BASE_URL + 'networks'
 
 class EdgeView(BaseView):
     """
+    
     """
     # Utility Methods to access node position
     def get_width(self):

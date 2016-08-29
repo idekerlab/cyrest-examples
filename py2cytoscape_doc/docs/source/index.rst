@@ -11,8 +11,15 @@ Network visualization feature is still limited in Python, but with this tool, yo
 
 .. toctree::
    :maxdepth: 2
-   :github_url: ~~
+   :numbered: 2
 
+   introduction
+   tutorial
+   py2cytoscape
+   py2cytoscape.cytoscapejs
+   py2cytoscape.data
+   py2cytoscape.util
+   modules
 
 
 Indices and tables

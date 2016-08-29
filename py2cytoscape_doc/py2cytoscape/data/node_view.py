@@ -12,7 +12,6 @@ from . import HEADERS
 
 class NodeView(BaseView):
     """
-    In this class, we can 
     """
     # Utility Methods to access node position
     def get_x(self):

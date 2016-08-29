@@ -11,7 +11,8 @@ from .style import Style
 
 class StyleClient(object):
     """
-    This class has the method to manage cytoscape style. By using this, you can create, delete, apply and get style class.
+    This class has the method to manage cytoscape style.
+    By using this, you can create, delete, apply and get style class.
     """
     def __init__(self, url):
         self.__url = url + 'styles'
@@ -60,6 +61,8 @@ class StyleClient(object):
 
         :param name: The visual style's name.
         :param data_format: the data format.
+
+        :return : Visual Style of Cytoscape.js CSS in an array.
         """
         if name is None:
             raise ValueError('Style name is required.')
@@ -103,7 +106,7 @@ class StyleClient(object):
 class VisualProperties(object):
     """
     This class has the methods to get visual properties.
-    
+
     """
     def __init__(self, url):
         self.__url = url + 'styles/visualproperties'

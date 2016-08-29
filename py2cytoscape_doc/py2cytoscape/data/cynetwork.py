@@ -21,7 +21,7 @@ BASE_URL_NETWORK = BASE_URL + 'networks'
 
 class CyNetwork(object):
     """
-    
+
     """
     def __init__(self, suid=None, session=None, url=None):
         if pd.isnull(url):
@@ -382,10 +382,12 @@ class CyNetwork(object):
     def update_node_table(self, df=None, network_key_col='name',
                           data_key_col=None):
         """
-        TODO
-        :param df:
-        :param network_key_col:
-        :param data_key_col:
+        We can update node table by using this method.
+
+        :param df: pandas data frame.
+        :param network_key_col: This is the network key column name. This parameter is used to update existing data with adding data.
+        :param data_key_col: This is the adding data key column name. This parameter is used to update existing data with adding data.
+
         :return :
         """
         return self.__update_table('node', df=df, network_key_col=network_key_col, data_key_col=data_key_col)
