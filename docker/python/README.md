@@ -24,6 +24,7 @@ Please do the following steps to get started.
 
 1. Install 'Docker for Mac/Windows' in your personal computer(You can skip this step if you already use docker in your computer)
 1. Download or clone this directory.
+1. launch docker.
 1. Build and run Dockerfile in your computer.
     1. Open a command-line terminal, and go to the directory where you downloaded this repository.
     1. Try ``` docker build -t cyrest/examples . ``` on command-line.
