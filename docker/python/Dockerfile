@@ -1,19 +1,17 @@
 FROM jupyter/datascience-notebook
 
-MAINTAINER xxxx <xxxx@xxxx>
+MAINTAINER Kazumasa Saito
 
 #USER root
 
-#RUN echo 'deb http://downloads.skewed.de/apt/stretch stretch main'  > /etc/apt/sources.list.d/precise.list
-#RUN echo 'deb-src http://downloads.skewed.de/apt/stretch stretch main' > /etc/apt/sources.list.d/precise.list
-#RUN apt-key adv --keyserver pgp.skewed.de --recv-key 98507F25
+# For installing graph-tool
+USER root
+# Install OS-level packages and misc. tools
+RUN apt-get update
 
-#RUN apt-get update && \
-#    apt-get install -y python3-graph-tool \
-#		curl wget gcc libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN apt-get install -y build-essential
+RUN apt-get install -y curl wget --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
+# Install Python dependencie
 USER $NB_USER
-
-RUN conda install --quiet --yes 'numpy'
-
-RUN pip install networkx python-igraph pytz py2cytoscape requests
+RUN pip install networkx python-igraph py2cytoscape requests bokeh
