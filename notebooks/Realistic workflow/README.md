@@ -9,6 +9,19 @@ These are the realistic workflow collections for bioinfomatician who want to use
 
 There are very useful realistic workflows when you want to use Cytoscape from cyREST. The workflows use py2cytoscape and RCy3 that are wrappers for cyREST. In addition to it, this workflos are reusable and scalable, so you can download and change these workflows to what you want.
 
+## Getting started
+
+To start realistic workflows, please do following instruction step by step.
+
+1. Launch Cytoscape.
+1. Download or clone [this repository](https://github.com/idekerlab/cyrest-examples) in your local.
+1. Go to the directory:"docker" in that repository and make your environment.When you make your environment, please mount the directory that you get in first step. In the following page, there are description how to make your environment with docker.
+  * [Overview](https://github.com/idekerlab/cyrest-examples/tree/master/docker)
+  * [For R users](https://github.com/idekerlab/cyrest-examples/tree/master/docker/R)
+  * [For Python users](https://github.com/idekerlab/cyrest-examples/tree/master/docker/python)
+1. Now, you can enjoy this realistic workflow without no error!!
+
+
 ## The contents of each workflow
 
 In each workflow, you can see following contents.
