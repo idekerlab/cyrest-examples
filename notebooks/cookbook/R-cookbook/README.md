@@ -18,7 +18,6 @@ To create stable environment, we prepare docker image for you. Please read follo
 * [For R users](https://github.com/idekerlab/cyrest-examples/tree/master/docker/R)
 
 # What is the cytoscape and RCy3
----------------------------------------
 
 ## What is the cytoscape?
 
@@ -39,7 +38,6 @@ https://bioconductor.org/packages/release/bioc/html/RCy3.html
 
 
 # The Cookbook contents
----------------------------------------
 
 * [Import](https://github.com/idekerlab/cyrest-examples/blob/master/notebooks/cookbook/R-cookbook/Import.ipynb)
 * [Analysis](https://github.com/idekerlab/cyrest-examples/blob/master/notebooks/cookbook/R-cookbook/Analysis.ipynb)

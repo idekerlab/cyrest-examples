@@ -19,7 +19,7 @@ To create stable environment, we prepare docker image for you. Please read follo
 * [For Python users](https://github.com/idekerlab/cyrest-examples/tree/master/docker/Python)
 
 
-# What is the cytoscape and RCy3
+# What is the cytoscape and py2cytoscape
 
 ## What is the cytoscape?
 
