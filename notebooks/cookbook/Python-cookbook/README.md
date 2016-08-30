@@ -20,7 +20,6 @@ To create stable environment, we prepare docker image for you. Please read follo
 
 
 # What is the cytoscape and RCy3
----------------------------------------
 
 ## What is the cytoscape?
 
@@ -40,7 +39,6 @@ py2cytoscape is a collection of utilities to use Cytoscape and Cytoscape.js from
 https://github.com/idekerlab/py2cytoscape
 
 # The Cookbook contents
----------------------------------------
 
 * [Import](https://github.com/idekerlab/cyrest-examples/blob/master/notebooks/cookbook/Python-cookbook/Import.ipynb)
 * [Analysis](https://github.com/idekerlab/cyrest-examples/blob/master/notebooks/cookbook/Python-cookbook/Analysis.ipynb)
