@@ -1,4 +1,4 @@
-# Realistic workflow for bioinfomatician
+# Realistic workflows for bioinfomatician
 
 ## Introduction
 
