@@ -2,7 +2,12 @@ FROM jupyter/datascience-notebook
 
 MAINTAINER Kazumasa Saito
 
-RUN R -e "install.packages('igraph', repos='http://cran.rstudio.com/')"
+# RUN R -e "install.packages('igraph, RJSONIO, httr', repos='http://cran.rstudio.com/')"
+RUN conda install --quiet --yes \
+    'r-igraph' \
+    'r-rjsonio' \
+    'r-httr' \
+    'r-data.table'
 
 # Install RCy3 from Bioconductor
 RUN R -e "source('http://bioconductor.org/biocLite.R'); biocLite('RCy3')"

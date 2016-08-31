@@ -1,6 +1,10 @@
-# cyrest-examples
+# CyREST User Guide
+
+![]()
 
 ## Introduction
+CyREST is a built-in feature for Cytoscape 3.3 and later to
+
 This is the latest collection of sample workflows for network analysis and visualization.
 
 ## ToC
@@ -9,5 +13,3 @@ This is the latest collection of sample workflows for network analysis and visua
 * Notebooks
     * Python
     * R
-
-
