@@ -46,11 +46,12 @@ class Style(object):
     def create_discrete_mapping(self, column=None, col_type='String',
                                 vp=None, mappings=None):
         """
+        Create discrete mapping. By this method, you can create discrete mapping with some column's value and view.
 
-        :param column:
-        :param col_type:
-        :param vp:
-        :param mappings:
+        :param column: The table's column name.
+        :param col_type: The table's column type.
+        :param vp: The visual proparty
+        :param mappings : This is the python's dictionary value. The key is the descrete column's value and value is that column's value.
         """
         self.__call_create_mapping(
             self.__get_discrete(column=column, col_type=col_type, vp=vp,
@@ -59,11 +60,12 @@ class Style(object):
     def create_continuous_mapping(self, column=None, col_type='String',
                                   vp=None, points=None):
         """
+        Create continuous mapping. By this method, you can create continuous mapping with some column's value and view.
 
-        :param column:
-        :param col_type:
-        :param vp:
-        :param points:
+        :param column: The table's column name.
+        :param col_type: The table's column type.
+        :param vp: The visual proparty
+        :param points: the points. You can create this value by create_slope and create_2_color_gradient that are StyleUtil class's methods in py2cytoscape.data.style
         """
         self.__call_create_mapping(
             self.__get_continuous(column=column, col_type=col_type, vp=vp,
@@ -72,10 +74,12 @@ class Style(object):
     def create_passthrough_mapping(self, column=None, col_type='String',
                                    vp=None):
         """
+        Create pass through mapping. By using this method, you can set value from table to view.
 
-        :param column:
-        :param col_type:
-        :param vp:
+        :param column: The table's column name.
+        :param col_type: The column type.
+        :param vp: vizual proparty.
+
         """
         self.__call_create_mapping(
             self.__get_passthrough(column=column, col_type=col_type, vp=vp))
@@ -191,6 +195,7 @@ class StyleUtil(object):
     @staticmethod
     def create_2_color_gradient(min=0, max=10, colors=('red', 'green')):
         """
+        create
         :param min:
         :param max:
         :param colors:
