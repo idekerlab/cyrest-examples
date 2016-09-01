@@ -1,4 +1,6 @@
-# cyrest-examples
+# CyREST User Guide
+
+![]()
 
 ## Introduction
 
@@ -8,13 +10,13 @@ This is the latest collection of sample workflows for network analysis and visua
 
 ## What this Gives you
 
-In this repository, you can get following two things.
+In this repository, you can get following three things.
 
 * The Environment to execute some codes or workflows for network analysis by using docker container.
 
 * Comprehensive and up-to-date set of basic workflows as Jupyter Notebooks for users who want to use Cytoscape programmatically.
 
-* Realistic workflows for bio-infomatician who analyze network. with Cytoscape.
+* Realistic workflows for bio-infomatician who analyzing  network with Cytoscape.
 
 ## Quick Start Guide
 
@@ -33,7 +35,7 @@ To get started, please do following instruction step by step.
 
 We prepare notebooks for python and R users who want to use Cytoscape programmatically. In this notebooks, there are two main contents.
 
-* [**cookbook**](https://github.com/idekerlab/cyrest-examples/tree/master/notebooks/cookbook) : This is a cookbook for users who want to use py2cytoscape and RCy3. This cookbook is made by Jupyter notebook so you can read documentation and use reusable/scalable code.
+* [**cookbook**](https://github.com/idekerlab/cyrest-examples/tree/master/notebooks/cookbook) : This is a cookbook for py2cytoscape and RCy3 users. This cookbook is made by Jupyter notebook, so you can read documentation and use reusable/scalable code.
 * [**Realistic workflow**](https://github.com/idekerlab/cyrest-examples/tree/master/notebooks/Realistic%20workflow) : This is the more realistic workflow for network analysis with Cytoscape programatically.
 
 ## Future plan
